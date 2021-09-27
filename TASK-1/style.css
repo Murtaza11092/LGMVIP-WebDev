@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap');
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+.heading{
+    color: gold;
+    font-family: 'Tangerine', cursive;
+    font-size: 96px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+}
+.headingimg img{
+    width: 98.7vw;
+}
+.headingimg .btn1{
+    text-align: center;
+    padding: 20vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 25px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(22 216 22 / 69%);
+    padding: 10px 40px;
+    border-radius: 70px;
+    display: inline-block;
+    animation-name: todown;
+    animation-duration: 5s;
+}
+.btn1:link,
+.btn1:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    transition: all .2s;
+    margin: 5vh;
+}
+
+  
+
+
+.btn1::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+  
+.headingimg .btn1::after {
+    background-color: rgb(216 22 22 / 90%);
+}
+.btn1:hover::after {
+    transform: scale(1.5);
+    opacity: 0;
+}  
+  
+  
+
+.headingimg .quote{
+    background-color: rgb(0 0 1 / 70%);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 500;
+    width: 95vw;
+    font-family: 'Pinyon Script', cursive;     
+}
+.sidehoverbar a {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    background-color: #ad8400;
+    position: absolute;
+    font-size: 30px;
+    text-decoration: none;
+    Color: white;
+    padding-left: 10px;
+    border-radius: 0px 25px 25px 0px;
+    left: -190px;
+    transition: 0.5s;
+    opacity: 0.5;
+    font-family: 'Pacifico', cursive;  
+}
+.sidehoverbar a:hover {
+    left: 0px;
+    opacity: 1;
+    background-color: #ad8400;
+}
+
+.sidehoverbar i {
+    float: right;
+}
+
+.Home {
+    top: 50px;
+    width: 310px;
+    height: 50px;
+}
+
+.About {
+    top: 110px;
+    width: 310px;
+    height: 50px;
+}
+      
+.Clients {
+    top: 170px;
+    width: 310px;
+    height: 50px;
+}
+      
+.Contact {
+    top: 230px;
+    width: 310px;
+    height: 50px;
+}
+
+.hoverable-topic {
+    margin-left: 55px;
+}
+
+body{
+    background-color: #ad8400;
+}
+.bodyheading{
+    margin-top: 50px;
+    background-color: #d00000;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 500;
+    width: 98.7vw;
+    font-family: 'Pacifico', cursive;  
+}
+    
+    /* Styling the area of the slides */
+    #slideshow {
+    border-radius: 200px;
+    overflow: hidden;
+    height: auto;
+    width: 1280px;
+    margin: 50px auto;
+    }
+    
+    /* Style each of the sides
+    with a fixed width and height */
+    .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    height: auto;
+    width: auto;
+    }
+    
+    /* Add animation to the slides */
+    .slide-wrapper {
+    /* Calculate the total width on the
+    basis of number of slides */
+    width: calc(640px * 4);
+    
+
+    animation: slide 10s ease infinite;
+    }
+    
+    @keyframes slide {
+    /* Calculate the margin-left for
+    each of the slides */
+    20% {
+        margin-left: 0px;
+    }
+    
+    40% {
+        margin-left: calc(-640px * 1);
+    }
+    
+    60% {
+        margin-left: calc(-640px * 2);
+    }
+    }
+    .floating { 
+        display: flex;
+        align-items: center;
+        height: 100px;
+        width: 340px;
+        background: rgb(0 255 231);
+        padding: 10px;
+        animation-name: floating;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        margin-left: 520px;
+        margin-top: 5px;
+        font-family: 'Pacifico', cursive;  
+        font-size: 50px;
+        border-radius: 40px;
+        }
+        @keyframes floating {
+            0% { transform: translate(0,  0px); }
+            50%  { transform: translate(0, 30px); }
+            100%   { transform: translate(0, -0px); }   
+    }
+body .name1{
+position: absolute;
+margin-top: 375px;
+font-family: 'Ubuntu', sans-serif;
+font-size: 25px;
+font-weight: bold;
+margin-left: 21px;
+}
+body .name2{
+    position: absolute;
+    margin-top: 375px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    margin-left: 350px;
+    font-weight: bold;
+    }
+body .name3{
+    position: absolute;
+    margin-top: 375px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    margin-left: 732px;
+    font-weight: bold;
+    }
+body .name4{
+    position: absolute;
+    margin-top: 375px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    margin-left: 1108px;
+    font-weight: bold;
+    }
+body .ceo img{
+    border-style: dashed;
+    margin-top: 50px;
+    position: absolute;
+    border-radius: 400px;
+    height: 300px;
+    margin-left: 50px;
+}
+body .chef img{
+    border-style: dashed;
+    margin-top: 50px;
+    position: absolute;
+    border-radius: 400px;
+    height: 300px;
+    margin-left: 397px;
+} 
+body .manager img{
+    border-style: dashed;
+    margin-top: 50px;
+    position: absolute;
+    border-radius: 400px;
+    height: 300px;
+    margin-left: 773px;
+} 
+body .marketing img{
+    border-style: dashed;
+    margin-top: 50px;
+    position: absolute;
+    border-radius: 400px;
+    height: 300px;
+    margin-left: 1116px;
+} 
+body .contenthead h1{
+    background-color: #d00000;
+    margin-top: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Pacifico', cursive;  
+    font-size: 50px;
+}
+
+body .content{
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+    color: #ad8400;
+    height: 350px;
+    background-color: black;
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    border-radius: 40px;
+}
+.client h1{
+    background-color: tomato;
+    color: greenyellow;
+}  
+
+#slideshow2 {
+    border-color: black;
+    border-width: thick;
+    border-radius: 20px;
+    border-style: double;
+    overflow: hidden;
+    height: auto;
+    width: 640px;
+    margin: 50px auto;
+    }
+    
+    /* Style each of the sides
+    with a fixed width and height */
+    .client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    height: 460px;
+    width: 640px;
+    }
+    
+    /* Add animation to the slides */
+    .slide-wrapper2 {
+    /* Calculate the total width on the
+    basis of number of slides */
+    width: calc(640px * 5);
+    
+
+    animation: client 12s ease infinite;
+    }
+    
+    @keyframes client {
+    /* Calculate the margin-left for
+    each of the slides */
+    15% {
+        margin-left: 0px;
+    }
+    
+    30% {
+        margin-left: calc(-640px * 1);
+    }
+    
+    50% {
+        margin-left: calc(-640px * 2);
+    }
+    70% {
+        margin-left: calc(-640px * 3);
+    }
+    85% {
+        margin-left: calc(-640px * 4);
+    }
+    100% {
+        margin-left: calc(0px);
+    }
+        }
+.floating2 { 
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 300px;      
+    background: rgb(0 255 231);
+    padding: 10px;
+    animation-name: floating2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 520px;
+    margin-top: 105px;
+    font-family: 'Pacifico', cursive;  
+    font-size: 50px;
+    border-radius: 40px;
+    }
+    @keyframes floating2 {
+        0% { transform: translate(0,  0px); }
+        50%  { transform: translate(0, 30px); }
+        100%   { transform: translate(0, -0px); }   
+}
+.clientblock{
+    border-radius: 40px;
+    background-color: red;
+    width: 1280px;
+    margin-left: 32px;
+} 
+.floating3 { 
+    
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 300px;
+    background: rgb(0 255 231);
+    padding: 10px;
+    animation-name: floating3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 520px;
+    margin-top: 105px;
+    font-family: 'Pacifico', cursive;  
+    font-size: 50px;
+    border-radius: 40px;
+    }
+    @keyframes floating3 {
+        0% { transform: translate(0,  0px); }
+        50%  { transform: translate(0, 30px); }
+        100%   { transform: translate(0, -0px); }   
+}
+.headcontact{
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    font-size: 15px;
+    color: #ff8100;
+}
+.contactcontent{
+    margin-top: 50px;
+    border-radius: 40px;
+    width: 1280px;
+    margin-left: 32px;
+}
+.bodycontact{
+    font-size: 40px;
+    border-radius: 40px;
+    height: 400px;
+    background-color: black;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+footer{
+    margin-top: 50px;
+    font-size: 30px;
+    background-color: #ff0000;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+     
